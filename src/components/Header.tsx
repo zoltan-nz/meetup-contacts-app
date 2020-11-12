@@ -1,11 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { FC } from 'react';
 
-const Header = styled.h1`
-  font-family: fantasy;
-  font-size: 3em;
-  text-align: center;
-  color: palevioletred;
-`;
+const Header: FC = ({ children }) => <h1>{children}</h1>;
 
 export default Header;
