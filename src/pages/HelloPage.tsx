@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react';
 import { useParams } from 'react-router';
+import Button, { TomatoButton } from '../components/Button';
 import HelloWorld from '../components/HelloWorld';
 
 const HelloPage: FC = () => {
@@ -13,7 +14,8 @@ const HelloPage: FC = () => {
       <HelloWorld name={name} />
       <p>{counter}</p>
 
-      <button onClick={() => setCounter(counter + 1)}>Click</button>
+      <Button size={counter}  whatever onClick={() => setCounter(counter + 1)}>Click</Button>
+      <TomatoButton whatever>Something</TomatoButton>
     </>
   );
 };
